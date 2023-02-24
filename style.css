@@ -1,0 +1,359 @@
+
+
+body {
+    font-size: 20px;
+    background-color: bisque;
+    
+  
+  }
+  
+  /*gör så att länk inte har nån decoration */
+  a {
+    text-decoration: none;
+
+  }
+
+
+  .imgbox {
+    display: grid;
+    height: 100%;
+    
+  }
+  
+  .center-fit {
+    max-width: 100%;
+    max-height: 120vh;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    background: url(opengraph.jpg) center center cover no-repeat fixed;
+   
+    
+  }
+  
+  
+  
+  /* pizza logo */
+  .pizza-logo {
+    position: absolute;
+    top: 17%;
+    left: 12%;
+    transform: translate(-50%, -50%);
+  }
+  /*meny box*/
+  .menu-box{
+    position: absolute;
+    top: 15%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+    border-radius: 25px;
+    border: 2px solid black;
+    padding: 20px;
+    width: 200px;
+    height: 60px;
+    background-color: green;
+    text-align: center;
+    
+  }
+  /*kontakt box*/
+  .contacts-box{
+    position: absolute;
+    top: 15%;
+    left:61%;
+    transform: translate(-50%, -50%);
+    border-radius: 25px;
+    border: 2px solid black;
+    padding: 20px;
+    width: 200px;
+    height: 60px;
+    background-color: green;
+    text-align: center;
+  }
+  /*betäll box*/
+  .order-box{
+    position: absolute;
+    top: 15%;
+    left:88%;
+    transform: translate(-50%, -50%);
+    border-radius: 25px;
+    border: 2px solid black;
+    padding: 20px;
+    width: 200px;
+    height: 60px;
+    background-color:green;
+    text-align: center;
+  }
+  
+  /*info boxen i mitten av index sidan*/
+  .index-info{
+    position: absolute;
+    top: 65%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    text-decoration: none;
+    width: 400px;
+    font-size: 20px;
+    text-align: center;
+    background-color: rgb(215, 191, 55);
+    height: 430px;
+    border: solid 2px black;
+    font-size: 20px;
+  }
+  
+  #new-pizza {
+  color: red;
+  }
+
+  #menyn{
+    color: white;
+ }
+
+  #kontakten{
+    color: white;
+  }
+
+  #beställning{
+    color: white; 
+  }
+
+  #beställpizza{
+    color: white;
+
+  }
+
+  #Insta{
+    color: black;
+    text-decoration: underline;
+  }
+
+  #Facebook{
+    color: black;
+    text-decoration: underline;
+
+  }
+
+  #Karta{
+    color: black;
+    text-decoration: underline;
+
+  }
+
+  #info-order {
+  position: absolute;
+    top: 80%;
+    transform: translate(-50%, -50%);
+    border-radius: 25px;
+    border: 2px solid black;
+    padding: 20px;
+    width: 200px;
+    height: 60px;
+    background-color: green;
+    text-align: center;
+    transition: 0.7s;
+    opacity: 0.65;
+  }
+  /*transition för beställ knappen i mitten av index*/
+  #info-order:hover {
+    opacity: 1;
+}
+  
+  
+  .menu-center {
+  position: absolute;
+  left: 41%;
+  top: 67%;
+  
+  
+  }
+  .pizza-header {
+  position: absolute;
+  text-align: center;
+  width: 400px;
+  height: 200px;
+  left: 41%;
+  top: 57%;
+  }
+  .menu-picture-fit {
+  max-width: 100%;
+  max-height: 120vh;
+  width: 100%;
+  height: 50%;
+  
+  }
+  /*medlem formuläret */
+  .member-form {
+    position: absolute;
+    top: 65%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    text-decoration: none;
+    width: 400px;
+    font-size: 20px;
+    text-align: left;
+    background-color: white;
+    height: 430px;
+    border: solid 2px black;
+    font-size: 20px;
+  
+  }
+  /*Infromation om vad du har beställt */
+  .order-info {
+    position: absolute;
+    top: 65%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    text-decoration: none;
+    width: 400px;
+    font-size: 20px;
+    text-align: center;
+    background-color: white;
+    height: 430px;
+    border: solid 2px black;
+    font-size: 20px;
+  }
+   
+
+  /*Pizza flexlådorna*/
+
+  h2{
+  text-align: left;
+}
+/*all h3 text ska göra det samma som h3 gör*/
+h3{
+  text-align: inherit;
+}
+/*visa flex vilket visar oss området och radar upp min kod*/
+.container1{
+  display: flex;
+}
+/*clickbara sektionen längst upp och med färgen transparent*/
+.boxI{
+  background: transparent;
+  width: 220px;
+  height: 30px;
+  margin: 10px;
+  text-align: center;
+}
+
+.Bilarna{
+  display:flex;
+  margin: 10px;
+  flex-direction: row;
+  justify-content: center;
+}
+
+
+
+.box2{
+  display: flex;
+  background: grey;
+  width: 270px;
+  height: 400px;
+  margin: 10px;
+}
+
+.card{
+  background-color: green;
+  height: 150px;
+  margin-bottom: 15px;
+  top: 50%;
+}
+
+
+/*Korten och dess storlekar med felx justeringar*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-image: url(./);
+ 
+}
+/*flex för att rada upp den med samtliga*/
+.container {
+  display:flex
+}
+/*hur korten visas vanligt*/
+.card{
+  background: white;
+  width: 270px;
+  height: 400px;
+  margin: 10px;
+  border-radius: 15px;
+
+}
+
+
+.card-image {
+  background-color: aqua;
+  height: 150px;
+  margin-bottom: 15px;
+  background-size: cover;
+  border-radius: 15px 15px 0 0;
+ 
+}
+
+.car-1{
+  background-image: url(./download.jpg);
+
+}
+
+.car-2{
+  background-image: url(./1920@80.webp);
+
+}
+
+.car-3{
+  background-image: url(./kebabpizza.jpg);
+
+}
+
+.car-4{
+  background-image: url(./9.-Pommestallrik.webp);
+
+}
+
+.card h2{
+  padding: 10px;
+}
+
+.card p{
+  padding: 10px;
+}
+/*hur kortens kontrast är skrivna*/
+.card a{
+  background-color: black;
+  color: white;
+  padding: 15px 20px;
+  display: block;
+  text-align: center;
+  margin: 20px 50px;
+  text-decoration: none;
+}
+/*mekaniken bakom hur korten skiftar och tiden samt sättet är uppbyggd*/
+.card:hover {
+  background-color: rgb(62,62,62);
+  color: white;
+  cursor: pointer;
+  transform: scale(1.04);
+  transition: all 1s ease;
+}
+
+/*Texten under och positionerna samt storlek för den*/
+
+
+.footer {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 0rem;
+  background-color: transparent;
+  text-align: right;
+}
+
+
+.texta{
+  text-align: center;
+}

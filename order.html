@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+ <!--- titel på sidan --->
+        <title>
+            Bästa Pizzan
+        </title>
+ 
+        <link rel="stylesheet" href="style.css">
+ 
+ <style>body {background-color: bisque;}</style>
+</head>
+ 
+    <body >
+    
+
+<!-- backround img-->
+<div class="imgbox">
+    <img class="center-fit" src='opengraph.jpg'>
+    <div class="pizza-logo"><a href="index.html"><img src="images2.0.png" alt="LOGO" ></a></div>
+
+    <div class="menu-box">
+        <a href="menu.html"> <p id="menyn">Meny</p> </a>
+    </div>
+
+
+    <div class="contacts-box">
+        <a href="contacts.html"> <p id="kontakten">Kontakt</p> </a>
+    </div>
+
+    
+    <div class="order-box">
+        <a href="order.html"> <p id="beställning">Beställ</p></a>
+    </div>  
+                   
+    
+</div>
+
+<!--varukorg -->
+    <div class="order-info">
+        <h1>Varukorg:</h1>
+<br>
+        <p></p>
+        <p>Din pappa på pizza special</p>
+        <p>Hela ditt släktträd på pizza special</p>
+<br>
+     
+
+
+
+
+       <div id="my_form">
+       <br><br>
+        <label for="price-tag">Totalt: Betalas via bitcoin inte sek</label>  
+        <br>
+        <br>
+        <button id="nextStep">Betala snälla här</button>
+      </div>
+      
+    
+    
+    
+      <div id="thank_you" style="display: none;">
+    <u>Din beställning görs redo!</u><br>
+       
+      </div>
+      
+
+
+
+
+
+       
+</div>
+
+
+
+  
+  <script>
+    var nextStep = document.querySelector('#nextStep');
+  
+    nextStep.addEventListener('click', function (e) {
+      e.preventDefault();
+      // Hide first view
+      document.getElementById('my_form').style.display = 'none';
+  
+      // Show thank you message element
+      document.getElementById('thank_you').style.display = 'block';
+    });
+  </script>
